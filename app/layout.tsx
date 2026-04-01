@@ -4,8 +4,8 @@ import { LangProvider } from "@/lib/lang-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Your Name",
-  description: "Full-Stack Developer & UI Engineer",
+  title: "Abdulrahman Al-Shahrani | AI & Data-Driven Systems Specialist",
+  description: "AI & Data-Driven Systems Specialist specializing in IoT, machine learning, and data-driven solutions.",
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem={false}
           disableTransitionOnChange={false}
         >
