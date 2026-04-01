@@ -18,7 +18,7 @@ export default function Footer() {
         </span>
         <span className="flex items-center gap-1.5">
           {t.footer.built}{" "}
-          <Heart size={11} className="text-purple-500 fill-purple-500" />{" "}
+          <Heart size={11} className="text-emerald-500 fill-emerald-500" />{" "}
           {t.footer.and} Next.js
         </span>
       </div>

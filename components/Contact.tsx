@@ -1,12 +1,12 @@
 "use client";
- 
+
 import Section, { SectionLabel } from "@/components/Section";
 import { useLang } from "@/lib/lang-provider";
 import { Mail, Linkedin, Github } from "lucide-react";
- 
+
 export default function Contact() {
   const { t, dir } = useLang();
- 
+
   const links = [
     {
       label: t.contact.emailLabel,
@@ -24,7 +24,7 @@ export default function Contact() {
       icon: Github,
     },
   ];
- 
+
   return (
     <Section id="contact" className="bg-zinc-50 dark:bg-zinc-900/40">
       <div dir={dir} className="text-center">
@@ -38,7 +38,7 @@ export default function Contact() {
         <p className="text-zinc-600 dark:text-zinc-400 max-w-md mx-auto leading-relaxed mb-12">
           {t.contact.subtitle}
         </p>
- 
+
         <div className="flex flex-wrap justify-center gap-4">
           {links.map(({ label, href, icon: Icon }) => (
             <a
@@ -46,7 +46,7 @@ export default function Contact() {
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 px-6 py-3 border border-zinc-200 dark:border-zinc-700 hover:border-purple-500 dark:hover:border-purple-500 rounded-lg font-mono text-sm text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400 hover:shadow-md hover:shadow-purple-900/10 active:scale-95 transition-all duration-200"
+              className="group inline-flex items-center gap-2 px-6 py-3 border border-zinc-200 dark:border-zinc-700 hover:border-emerald-500 dark:hover:border-emerald-500 rounded-lg font-mono text-sm text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:shadow-md hover:shadow-emerald-900/10 active:scale-95 transition-all duration-200"
             >
               <Icon size={15} className="group-hover:scale-110 transition-transform" />
               {label}

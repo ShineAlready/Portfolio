@@ -11,6 +11,9 @@ export default function Hero() {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const [firstName, ...rest] = t.hero.name.split(" ");
+  const lastName = rest.join(" ");
+
   return (
     <section
       id="home"
@@ -19,8 +22,8 @@ export default function Hero() {
     >
       {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 dark:bg-purple-500/8 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-violet-500/10 dark:bg-violet-500/6 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/8 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-teal-500/10 dark:bg-teal-500/6 rounded-full blur-3xl" />
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.025] dark:opacity-[0.04]"
@@ -36,7 +39,7 @@ export default function Hero() {
         <div
           className={cn(
             "opacity-0 animate-fade-up",
-            "font-mono text-xs tracking-widest uppercase text-purple-500 dark:text-purple-400 mb-4"
+            "font-mono text-xs tracking-widest uppercase text-emerald-500 dark:text-emerald-400 mb-4"
           )}
         >
           {t.hero.greeting}
@@ -46,7 +49,8 @@ export default function Hero() {
           className="opacity-0 animate-fade-up delay-100 font-serif text-6xl md:text-8xl lg:text-9xl font-normal leading-none text-zinc-900 dark:text-zinc-50 mb-4"
           style={{ fontFamily: "'DM Serif Display', serif" }}
         >
-          {t.hero.name}
+          <span className="block">{firstName}</span>
+          <span className="block">{lastName}</span>
         </h1>
 
         <h2
@@ -69,7 +73,7 @@ export default function Hero() {
         >
           <button
             onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
-            className="group inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-500 active:scale-95 text-white rounded-lg font-mono text-sm transition-all duration-200 shadow-lg shadow-purple-900/20"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white rounded-lg font-mono text-sm transition-all duration-200 shadow-lg shadow-emerald-900/20"
           >
             {t.hero.cta}
             <ArrowDown
@@ -81,7 +85,7 @@ export default function Hero() {
           <a
             href="/cv.pdf"
             download
-            className="group inline-flex items-center gap-2 px-6 py-3 border border-zinc-300 dark:border-zinc-700 hover:border-purple-500 dark:hover:border-purple-500 active:scale-95 text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400 rounded-lg font-mono text-sm transition-all duration-200"
+            className="group inline-flex items-center gap-2 px-6 py-3 border border-zinc-300 dark:border-zinc-700 hover:border-emerald-500 dark:hover:border-emerald-500 active:scale-95 text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400 rounded-lg font-mono text-sm transition-all duration-200"
           >
             <Download size={14} className="group-hover:translate-y-0.5 transition-transform" />
             {t.hero.cv}

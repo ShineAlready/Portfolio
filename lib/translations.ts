@@ -120,6 +120,6 @@ export const translations = {
     },
   },
 };
- 
+
 export type Lang = "en" | "ar";
 export type Translations = typeof translations.en;

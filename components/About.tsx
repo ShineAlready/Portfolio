@@ -1,8 +1,8 @@
 "use client";
- 
+
 import Section, { SectionLabel } from "@/components/Section";
 import { useLang } from "@/lib/lang-provider";
- 
+
 const SKILLS = [
   "Python",
   "HTML",
@@ -17,10 +17,10 @@ const SKILLS = [
   "MySQL",
   "Git & GitHub",
 ];
- 
+
 export default function About() {
   const { t, dir } = useLang();
- 
+
   return (
     <Section id="about" className="bg-zinc-50 dark:bg-zinc-900/40">
       <div dir={dir}>
@@ -37,7 +37,7 @@ export default function About() {
             <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">{t.about.p2}</p>
             <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">{t.about.p3}</p>
           </div>
- 
+
           <div>
             <h3 className="font-mono text-sm tracking-wider uppercase text-zinc-500 dark:text-zinc-400 mb-5">
               {t.about.skills}
@@ -46,7 +46,7 @@ export default function About() {
               {SKILLS.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1.5 text-sm font-mono border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-md hover:border-purple-400 dark:hover:border-purple-500 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-200 cursor-default"
+                  className="px-3 py-1.5 text-sm font-mono border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-md hover:border-emerald-400 dark:hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-200 cursor-default"
                 >
                   {skill}
                 </span>

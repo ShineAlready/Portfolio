@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => scrollToSection("home")}
-          className="font-mono text-sm font-medium text-purple-500 dark:text-purple-400 tracking-tight hover:text-purple-600 dark:hover:text-purple-300 active:scale-95"
+          className="font-mono text-sm font-medium text-emerald-500 dark:text-emerald-400 tracking-tight hover:text-emerald-600 dark:hover:text-emerald-300 active:scale-95"
         >
           &lt;AAS /&gt;
         </button>
@@ -75,7 +75,7 @@ export default function Navbar() {
               className={cn(
                 "px-3 py-1.5 rounded-md text-sm font-mono transition-all duration-200 active:scale-95",
                 activeSection === id
-                  ? "text-purple-500 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/40"
+                  ? "text-emerald-500 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
                   : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/60"
               )}
             >
@@ -132,7 +132,7 @@ export default function Navbar() {
               className={cn(
                 "text-start px-3 py-2 rounded-md text-sm font-mono transition-all active:scale-95",
                 activeSection === id
-                  ? "text-purple-500 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/40"
+                  ? "text-emerald-500 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40"
                   : "text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800"
               )}
             >

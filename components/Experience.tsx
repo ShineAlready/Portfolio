@@ -1,8 +1,8 @@
 "use client";
- 
+
 import Section, { SectionLabel } from "@/components/Section";
 import { useLang } from "@/lib/lang-provider";
- 
+
 const EXPERIENCE = [
   {
     role: "B.Sc. Computer Information Systems",
@@ -36,10 +36,10 @@ const EXPERIENCE = [
     ],
   },
 ];
- 
+
 export default function Experience() {
   const { t, dir } = useLang();
- 
+
   return (
     <Section id="experience" className="bg-zinc-50 dark:bg-zinc-900/40">
       <div dir={dir}>
@@ -50,23 +50,23 @@ export default function Experience() {
         >
           {t.experience.heading}
         </h2>
- 
+
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute top-0 bottom-0 left-[7px] md:left-[11px] w-px bg-zinc-200 dark:bg-zinc-800" />
- 
+
           <div className="space-y-10">
             {EXPERIENCE.map((exp, i) => (
               <div key={i} className="relative pl-8 md:pl-10">
                 {/* Dot */}
-                <div className="absolute left-0 top-1.5 w-3.5 h-3.5 rounded-full border-2 border-purple-500 bg-white dark:bg-zinc-950" />
- 
+                <div className="absolute left-0 top-1.5 w-3.5 h-3.5 rounded-full border-2 border-emerald-500 bg-white dark:bg-zinc-950" />
+
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-3">
                   <div>
                     <h3 className="font-medium text-zinc-900 dark:text-zinc-100">
                       {exp.role}
                     </h3>
-                    <p className="text-purple-600 dark:text-purple-400 font-mono text-sm">
+                    <p className="text-emerald-600 dark:text-emerald-400 font-mono text-sm">
                       {exp.company}
                     </p>
                   </div>
@@ -79,14 +79,14 @@ export default function Experience() {
                     </p>
                   </div>
                 </div>
- 
+
                 <ul className="space-y-2">
                   {exp.bullets.map((bullet, j) => (
                     <li
                       key={j}
                       className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed flex gap-2"
                     >
-                      <span className="text-purple-400 mt-1.5 shrink-0">▸</span>
+                      <span className="text-emerald-400 mt-1.5 shrink-0">▸</span>
                       {bullet}
                     </li>
                   ))}
