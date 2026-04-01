@@ -11,7 +11,7 @@ type NavItem = typeof NAV_ITEMS[number];
 
 export default function Navbar() {
   const { t, lang, toggleLang, dir } = useLang();
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<NavItem>("home");
@@ -99,10 +99,10 @@ export default function Navbar() {
           {/* Theme toggle */}
           {mounted && (
             <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
               className="p-2 rounded-md text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 active:scale-95 transition-all"
             >
-              {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+              {resolvedTheme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
               <span className="sr-only">Toggle theme</span>
             </button>
           )}
