@@ -38,7 +38,8 @@ export const translations = {
     // Experience
     experience: {
       sectionLabel: "Background",
-      heading: "Education & Achievements",
+      heading: "Education",
+      achievementsHeading: "Achievements",
     },
     // Certifications
     certifications: {
@@ -97,7 +98,8 @@ export const translations = {
     },
     experience: {
       sectionLabel: "الخلفية",
-      heading: "التعليم والإنجازات",
+      heading: "التعليم",
+      achievementsHeading: "الإنجازات",
     },
     certifications: {
       sectionLabel: "الاعتمادات",
