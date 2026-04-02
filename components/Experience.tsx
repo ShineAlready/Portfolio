@@ -11,14 +11,14 @@ const EXPERIENCE = [
     location: "Saudi Arabia",
     bullets: [
       "GPA: 4.00 — graduating with distinction.",
-      "Specializing in data-driven systems, AI-enabled solutions, and smart technology integration.",
+      "Recognized for leading multidisciplinary technical project planning, system design, and implementation coordination.",
       "Led multidisciplinary graduation project (SafeTrack Kids) integrating IoT and real-time data systems.",
     ],
   },
   {
     role: "AI Program Participant",
     company: "KAUST Academy",
-    period: "2024",
+    period: "2025",
     location: "Saudi Arabia",
     bullets: [
       "Selected for the KAUST Academy Artificial Intelligence Program based on technical and academic merit.",
@@ -31,8 +31,7 @@ const EXPERIENCE = [
     period: "2025",
     location: "Saudi Arabia",
     bullets: [
-      "Competed demonstrating analytical problem-solving, business strategy, and team collaboration skills.",
-      "Recognized for leading multidisciplinary technical project planning, system design, and implementation coordination.",
+      "Competed demonstrating analytical problem-solving, business strategy, and team collaboration skills.", 
     ],
   },
 ];
